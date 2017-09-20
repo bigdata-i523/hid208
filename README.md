@@ -8,8 +8,8 @@
 
 ```
 owner:
-    hid: 000
-    name: Gregor von Laszewski
+    hid: 208
+    name: Devineni, Jyothi Pranavi
     url: https://github.com/bigdata-i523/sample-hid000
 ```
 
