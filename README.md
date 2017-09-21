@@ -10,7 +10,7 @@
 owner:
     hid: 208
     name: Devineni, Jyothi Pranavi
-    url: https://github.com/bigdata-i523/sample-hid000
+    url: https://github.com/bigdata-i523/hid208
 ```
 
 # Paper 1
@@ -18,11 +18,9 @@ owner:
 ```
 paper1:
    author: 
-   - Gregor von Laszewski
-   - Fugang Wang
+   - Jyothi Pranavi,Devineni
    hid:
-   - 000
-   - 001
+   - 208
    title: This is my paper about xyz
    abstract: This paper showcases tis and that and the other
    url: https://github.com/bigdata-i523/sample-hid000/paper1/paper1.pdf
@@ -33,9 +31,9 @@ paper1:
 ```
 paper2:
    author: 
-   - Gregor von Laszewski
+   - Jyothi Pranavi,Devineni
    hid:
-   - 000
+   - 208
    title: This is my paper about the other abc
    abstract: This paper showcases tis and that and the other in regards to abc
    url: https://github.com/bigdata-i523/sample-hid000/paper2/paper2.pdf   
