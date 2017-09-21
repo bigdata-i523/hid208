@@ -21,7 +21,7 @@ paper1:
    - Jyothi Pranavi,Devineni
    hid:
    - 208
-   title: This is my paper about xyz
+   title: This is my paper about Big Data and Deep Learning
    abstract: This paper showcases tis and that and the other
    url: https://github.com/bigdata-i523/sample-hid000/paper1/paper1.pdf
 ```
