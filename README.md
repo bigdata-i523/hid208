@@ -23,7 +23,7 @@ paper1:
    - 208
    title: This is my paper about Big Data and Deep Learning
    abstract: This paper showcases tis and that and the other
-   url: https://github.com/bigdata-i523/sample-hid000/paper1/paper1.pdf
+   url: https://github.com/bigdata-i523/hid208/paper1/paper1.pdf
 ```
    
 # Paper 2
@@ -36,7 +36,7 @@ paper2:
    - 208
    title: TBD
    abstract: This paper showcases tis and that and the other in regards to abc
-   url: https://github.com/bigdata-i523/sample-hid000/paper2/paper2.pdf   
+   url: https://github.com/bigdata-i523/hid208/paper2/paper2.pdf   
 ```
 
 # Project 
@@ -49,11 +49,11 @@ paper2:
    type: project
    type: report
    author: 
-   - Gregor von Laszewski
+   - Jyothi Pranavi Devineni
    hid:
    - 208
    title: TBD
    abstract: This paper showcases tis and that and the other 
-   url: https://github.com/bigdata-i523/sample-pid000/project/report.pdf
+   url: https://github.com/bigdata-i523/hid208/project/report.pdf
 ```
    
