@@ -34,7 +34,7 @@ paper2:
    - Jyothi Pranavi,Devineni
    hid:
    - 208
-   title: This is my paper about the other abc
+   title: TBD
    abstract: This paper showcases tis and that and the other in regards to abc
    url: https://github.com/bigdata-i523/sample-hid000/paper2/paper2.pdf   
 ```
