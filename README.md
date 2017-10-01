@@ -24,6 +24,7 @@ paper1:
    title: This is my paper about Big Data and Deep Learning
    abstract: This paper showcases tis and that and the other
    url: https://github.com/bigdata-i523/hid208/paper1/paper1.pdf
+   chapter: Machine Learning
 ```
    
 # Paper 2
