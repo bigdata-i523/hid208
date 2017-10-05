@@ -25,6 +25,7 @@ paper1:
    abstract: This paper showcases tis and that and the other
    url: https://github.com/bigdata-i523/hid208/paper1/paper1.pdf
    chapter: Machine Learning
+   type: latex
 ```
    
 # Paper 2
