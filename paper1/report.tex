@@ -42,9 +42,8 @@ Deep Learning is another hot topic which is being discussed almost everywhere. D
 Deep learning learns multiple levels of the deep architectures such as Deep Belief Networks(DBN), Convolutional Neural Networks(CNN) and so on. In this paper, a brief overview of DBN and CNN is given.
 
 \subsection{Deep Belief Networks}
-Any conventional neural network can only learn from the labelled data. But, most of the big data available is unlabelled. To take advantage of this massive amounts of unlabelled data, deep belief networks are used. They can not only learn from the labelled data, but also from the unlabelled data. They use both supervised and unsupervised learning techniques. It uses unsupervised techniques for pre- training and then to tune the data, it uses supervised techniques. The following figure shows the architecture of DBN.
+Any conventional neural network can only learn from the labelled data. But, most of the big data available is unlabelled. To take advantage of this massive amounts of unlabelled data, deep belief networks are used. They can not only learn from the labelled data, but also from the unlabelled data. They use both supervised and unsupervised learning techniques. It uses unsupervised techniques for pre- training and then to tune the data, it uses supervised techniques. Figure1 shows the architecture of DBN.
 
-%\includegraphics[width=80mm]{paper1-fig1.png}
 
 
 To achieve this, DBNs use Restricted Boltzmann Machines(RBMs). RBM consists of input layer, hidden layer and an output layer. Nodes in each layer are connected to all the nodes in the adjacent layer(input to hidden) and nodes in same layer are not connected to each other. Hence, we can say that nodes in same layer are independent of each other. The nodes in hidden layer are connected to the nodes in output layer according to the output to be generated. The network is pre-trained layer by layer using unlabelled data and the generative weights of each RBM are found using Gibbs sampling\cite{Hinton2006}. The output of an RBM is fed as input to the RBM in the next layer. This process is repeated until all the RBMs in a network are pre-trained. The weights represent the input data. Then, the output layer is constructed according to the required outputs. Then, fine tuning is performed using labels and by back propagation. RBMs can be trained on unlabelled and large amounts of data. The sampling probabilities of hidden and visible layers of an RBM with bernoulli distribution are as follows:
@@ -58,9 +57,8 @@ The weights are updated using the following equation. The $(t+1)^{th}$ weight is
 \begin{equation} \Delta w_{ij}\left ( t+1 \right )=c\Delta w_{ij}\left ( t \right )+\alpha \left (\langle v_i h_j \rangle _{data}-\langle v_i h_j \rangle _{model} \right )\qquad\end{equation}
 
 \subsection{Convolutional Neural Networks(CNN)}
-CNN is another multi-layer neural network which is used for deep learning. CNN consists of multiple layers of convolution, activation and pooling. Following figure depicts the architecture of a CNN:
+CNN is another multi-layer neural network which is used for deep learning. CNN consists of multiple layers of convolution, activation and pooling. Figure2  depicts the architecture of a CNN
 
-%\includegraphics[width=80mm]{paper1-fig2.png}
 
 Convolution is a mathematical operation on two functions. It is defined by the following equation:
 
@@ -87,9 +85,7 @@ Deep Learning is very useful for prediction, especially when it comes to unlabel
 
 In 2012, Deng et al.\cite{Deng2012} proposed the concept of Deep Stacking Network(DSN) for parallel processing in deep architectures. Also there are other methods to address the big data problems, like improving the computation power, parallely computing the weights of hidden and visible layers, by distributing them across different machines and then integrating. It is nothing but a multi-node cluster in Hadoop. Each system is considered as a slave node computing the weights of a part of the hidden and visible neurons.
 
-In addition to these techniques, systems with high computing power are used. One such example is GPU. The following figure shows the architecture of a GPU:
-
-%\includegraphics[width=80mm]{paper1-fig3.png}
+In addition to these techniques, systems with high computing power are used. One such example is GPU. Figure3 shows the architecture of a GPU:
 
 The above GPU consists of four multi processors(MP), each MP consists of multiple streaming processors(SM) and each SM consists of multiple stream processors(SP). The stream processors share a common control logic and memory. The GPU also has a global memory. The architecture shown in the figure is a Single Instruction Multiple Thread architecture(SIMT). Such architecture is used when multiple computations are to be performed with less access time to the memory. The global memory in GPU is also a high-latency memory with high bandwidth. Here, the host represents the CPU. This architecture supports two levels of parallelism, namely memory level(MP) and thread level(SP). It facilitates multi-threading by running many hundreds of thousands of threads at a time.
 
@@ -117,6 +113,29 @@ This paper discusses two of the available deep learning architectures and how th
 
   The authors would like to thank Professor Gregor Von Laszewski and all the associate instructors of the course I-523 for guiding us through.
 \end{acks}
+
+
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=80mm]{paper1-fig1.png}
+\caption{DBN}
+\label{fig:1}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=80mm]{paper1-fig2.png}
+\caption{CNN}
+\label{fig:2}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=80mm]{paper1-figure3.png}
+\caption{GPU}
+\label{fig:3}
+\end{figure}
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{report}
