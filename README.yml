@@ -4,7 +4,8 @@ owner:
     name: Devineni, Jyothi Pranavi
     url: https://github.com/bigdata-i523/hid208
 paper1:
-    abstract: 'Big Data is providing new opportunities for various industries in different  sectors
+    abstract: >
+        Big Data is providing new opportunities for various industries in different  sectors
         to enhance their performance by performing analysis on the huge  amounts of
         data available. However, this is not as easy as it is said. Storing,  transforming
         and performing analysis on such large amounts of  data requires good storing
@@ -12,8 +13,6 @@ paper1:
         data and use it to the benefit of the company like Map Reduce, Spark and so
         on.  Deep learning is one of the popular branches of machine learning which
         plays a key role  when it comes to big data analytics
-
-        '
     author:
         - Jyothi Pranavi,Devineni
     chapter: Machine Learning
