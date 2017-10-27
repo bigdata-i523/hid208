@@ -23,11 +23,11 @@ paper1:
     type: latex
     url: https://github.com/bigdata-i523/hid208/paper1/report.tex
 paper2:
-    abstract: This paper showcases tis and that and the other
+    abstract: This paper discusses various algorithms used for big data analysis.  
     author:
         - Jyothi Pranavi Devineni
     hid:
         - 208
-    title: TBD
-    type: report
-    url: https://github.com/bigdata-i523/hid208/project/report.pdf
+    title:  Algorithms for Big Data Analysis
+    type: latex
+    url: https://github.com/bigdata-i523/hid208/paper2/report.pdf
