@@ -1,1 +1,100 @@
+\documentclass[sigconf]{acmart}
 
+\usepackage{hyperref}
+
+\usepackage{endfloat}
+\renewcommand{\efloatseparator}{\mbox{}} % no new page between figures
+
+\usepackage{booktabs} % For formal tables
+
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+\pagestyle{plain} % removes running headers
+
+\begin{document}
+\title{Algorithms for Big Data Analysis}
+
+
+\author{Jyothi Pranavi Devineni}
+\affiliation{%
+  \institution{Indiana University Bloomington}
+  \city{Bloomington} 
+  \state{Indiana} 
+}
+\email{jyodevin@umail.iu.edu}
+
+\begin{abstract}
+Analysis of data is not easy, especially when the data is unstructured or has many features. However, there are many algorithms for data pre-processing, feature selection, classification, regression, etc. These algorithms make it simpler to understand and analyze the data. One of the main types of algorithms for analyzing the data is clustering algorithms. They help to categorize the data into clusters. All the related data is collected under one cluster. Clustering facilitates easy analysis of data. However, when it comes to big data, ordinary clustering algorithms might not work because of the absence of formal categorization. Hence, there are modified clustering algorithms for big data and they are comparable to the already existing algorithms for ordinary data.
+\end{abstract}
+
+\keywords{Clustering, Big Data, Fuzzy, Partitioning}
+
+
+\maketitle
+
+\section{Introduction}
+With the advances in technology, social media, search engines and other online websites like online shopping, became a part and parcel of everyone's life. With this, there are massive amounts of data available today which can be used for many applications such as improving the sales, predicting the future outcomes, etc. However, the amount of data produced by such websites and multinational companies is enormous. Conventional databases cannot store data that huge. Also, processing of such massive amounts of data is challenging. There are frameworks like Hadoop and its ecosystems make it easier to manage big data. Another efficient method of dealing with big data is to cluster the data without making it losing the information. There are effective clustering algorithms for big data which aim at producing such informative clusters which can be used by common people as well as corporate world.
+
+When it comes to Big Data, it is important to address three Vs. The first and the most important is the "Volume" of the data. To deal with huge volumes of data, a change in the storage architectures is required. Hadoop databases like HDFS and HBase can be used to store large volumes of data. Having dealt with the volume of big data, the next important feature is the "Velocity" of data. Data is generated as a continuous flow from online websites and social media sites. Hence, such data should be processed dynamically without much time lapse. The last feature to be addressed is the "Variety" of the data.
+
+Different types of data such as images, text, audio, etc are produced by companies and online websites. This data may be structured, semi-structured or unstructured. The proposed clustering algorithms for big data must be able to take care of these three features. In other words, according to our requirement, a suitable clustering algorithm should be used. Although there are many clustering algorithms for machine learning\cite{Xu2005}, data mining\cite{Aggarwal2012}, wireless signal processing\cite{Abbasi2007} and so on, it is not obvious which algorithm to use for a given data. It is the work of the researcher to carefully choose among the available algorithms. 
+
+\section{Clustering Criterion}
+In order to consider a clustering algorithm for clustering big data, the algorithm has to address the three Vs of big data. A clustering algorithm for huge volumes of data should consider the size of the data and must be able to handle the high dimensionality of the data and outliers.
+
+Similarly, when working with wide variety of data, to select an appropriate clustering algorithm, the factors to be considered are the type of the data set and size of the cluster. To select a clustering algorithm for data being generated continuously or with high velocity, the runtime of the algorithm is of utmost importance and so is the complexity of the algorithm.
+
+The features to be considered while looking for an appropriate clustering algorithm can be summarized as follows\cite{Fahad2014}:
+\begin{enumerate}
+    \item \textbf{Size of the data:} The size of the data is a major concern when it comes to applying normal clustering algorithms to big data. Clustering algorithms which work very efficiently for small data sets might not work well for big data.
+    \item \textbf{Handling High Dimensionality:} When trying to cluster huge volumes of data, it is important to take into account many or all of the attributes or features of data into consideration in order to get maximum possible information from the data. There are methods for dimensionality reduction to keep the most important features of the data and discard the rest whose presence or absence doesn't affect the analysis much. As the dimensionality increases, the data becomes sparse and clustering becomes difficult.
+    \item \textbf{Handling the Outliers:} When clustering the data, there might be some data points which are left out as we cannot include them in any cluster. Such data points, which do not conform to the properties of any of the designed clusters by the algorithm are called outliers or noisy data in other words. Hence, a clustering algorithm must be capable of handling the noisy data, by not losing the informative data.
+    \item \textbf{Type of Data:} Conventional clustering algorithms are designed for either numeric data or categorical data. But, in the real world, the data is available as numeric, categorical and also a mix of both. Hence clustering algorithms designed for numeric and categorical data does not work on mixed data.
+    \item \textbf{Shape of the Cluster:} An efficient clustering algorithm should be able to handle different data, which produces clusters of different shapes.
+    \item \textbf{Time Complexity or Run time of the Algorithm:} The clustering algorithms perform merely efficiently when they have used for clustering again and again to obtain the final clusters with good accuracy. Hence, if the runtime of the algorithm is too long, it takes infinitely long time to obtain the required clusters, especially while dealing with big data. Hence, the algorithm should be able to run within a finite time.
+    \item \textbf{Veracity}: An efficient clustering algorithm must be capable of producing the same data clusters, irrespective of the order in which the data is given.
+\end{enumerate}
+
+\section{Types of Clustering Algorithms}
+Their clustering algorithms can be categorized based on the method of clustering they follow as follows:
+\begin{enumerate}
+    \item Partitioning-Based
+    \item Hierarchical-based
+    \item Density-based
+    \item Model-based
+\end{enumerate}
+
+\subsection{Partitioning-Based}
+In partitioning-based clustering algorithms, the data is divided into distinctive partitions. Each partition represents a cluster. The clusters should satisfy two characteristics: (i) Each cluster should contain at least one data point or object and (ii) Each data point should belong to only one of the clusters at ant given a point of time. Initially, the data points are partitioned based on a union. For example, in K-Means algorithm, the center is the arithmetic mean of all data points belonging to a cluster and the cluster is represented by the arithmetic mean. K-Medoids, K-modes, FCM, and CLARA are other examples of partition based clustering algorithms. 
+\subsubsection{Fuzzy-C-means(FCM)}
+Fuzzy-C-means is a fuzzy clustering algorithm which is based on K-means\cite{Bezdek1984}. It is a soft clustering algorithm which places each data point in one or more clusters, with some degree of belief. The degree of belief of a data point ranges between 0 and 1 and according to the fuzzy rule, the sum of the degree of beliefs for a given data point over all clusters should be equal to 1. The fuzzy clustering finds the center of the cluster and updates the data points and their degrees of membership. This algorithm has the same drawback as that of the K-Means algorithm, i.e, the final clusters obtained are based on the selection of the initial weights as that of K-means and also the centers are local to that specific cluster. 
+\subsection{Hierarchical-based}
+In this type of clustering, data is organized in a hierarchical fashion and a single cluster may be divided into a number of clusters as the hierarchy progresses. The clustering can be agglomerative or divisive. As the name suggests, in agglomerative clustering, each object is treated as a cluster and as the time progresses, two or more related objects merge into one cluster. Alternatively, in divisive clustering, the whole data set is considered as one cluster and as the time progresses, the cluster is divided into different clusters based on common properties. This process continues in both agglomerative and divisive clustering techniques until a desired number of clusters are reached. Algorithms like BIRCH, Chameleon, and CURE  are the examples of hierarchical-bases clustering.  
+\subsubsection{BIRCH}
+The BIRCH algorithm\cite{Zhang1996} builds a CF tree or clustering feature tree by scanning the data dynamically. It initially scans the data and constructs an in-memory CF tree and then runs the algorithm to determine the clustering leaf nodes. It also assumes a branching factor B and a threshold T initially. The CF tree is constructed with the assumed branching factor and the clusters are created with a diameter within the threshold. The clusters created are hence circular. Whenever a data point is encountered, the algorithm traverses from the root node of the tree to the nearest child until a leaf node cluster is reached. Once the leaf node is reached, the data point is tested is it belongs to that cluster and if not, a new cluster with a diameter greater than the current threshold is created. This algorithm can deal with the noisy data effectively but cannot deal with clusters of different shapes, as the clusters created in this algorithm are spherical in shape. Also, for the different order of the data points given, different clusters are generated. BIRCH works effectively with one scan of the data but can become more efficient if the data is scanned repeatedly.  
+
+\subsection{Density-based}
+In density-based clustering, data points are clustered based on the density. The cluster progresses in the direction of the density, hence density clustering produces clusters of different shapes. This type of clustering is capable of handling the outliers or noisy data. Algorithms like DENCLUE and OPTICS are examples of density-based clustering algorithms.
+
+\subsection{Model-based}
+Model-based clustering algorithms assume that the data is generated by some probabilistic distribution and generate a fixed number of robust clusters, determined by some statistics such as the log likelihood. There are two types of model-based approaches, statistical and neural networks. In statistical approach determines the clusters based on the probabilities, whereas in neural network approach, the data points are represented as a series of connected input/output units, called perceptrons and the connections between them are assigned specific weights. The neural networks are famous for clustering as they can perform parallel processing and also they can adjust their weights according to the errors propagated using backpropagation. Expectation Maximization and COBWEB are the examples of model-based clustering algorithms.
+\subsubsection{Expectation-Maximization (EM)}
+There are three major steps in the EM algorithm. They are Initialization, Expectation, and Maximization. Its goal is to find a maximum likelihood solution.\cite{Dempster1977} It assumes that the data points are statistically distributed. In the initialization step, it assumes a certain number of clusters and also the respective means and variances for each distribution and the prior probabilities of the clusters, which should sum to one. In the expectation step, the posterior probability of each data point belonging to a particular cluster is calculated. In the maximization step, the algorithm tries to maximize the expectation. The new means, variances and prior probabilities are calculated. The expectation and maximization steps are performed iteratively, maximizing the likelihood. The algorithm always converges but is prone to arrive at local maxima. 
+
+
+
+\section{Conclusions}
+Clustering algorithms have been used whenever it comes to data analysis. But when it comes to big data, conventional clustering algorithms do not work and there is a need to follow specific algorithms which can handle the volume, variety, and velocity of big data. Each of the clustering algorithms can be used under different requirements as stated. 
+\begin{acks}
+
+  The authors would like to thank Professor Gregor Von Laszewski and all the associate instructors of the course I-523 for guiding us through.
+\end{acks}
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{report}
+
+
+
+
+\end{document}
