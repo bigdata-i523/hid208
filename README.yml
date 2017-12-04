@@ -1,8 +1,8 @@
 ---
 owner:
-    hid: 208
-    name: Devineni, Jyothi Pranavi
-    url: https://github.com/bigdata-i523/hid208
+    hid: 215
+    name: Mallala, Bharat
+    url: https://github.com/bigdata-i523/hid215
 paper1:
     abstract: >
         Big Data is providing new opportunities for various industries
@@ -17,14 +17,13 @@ paper1:
         of machine learning which plays a key role when it comes to
         big data analytics
     author:
-        - Jyothi Pranavi,Devineni
+        - Mallala, Bharat
     chapter: Machine Learning
     hid:
-        - 208
-    status: Oct 27 17 100%
-    title: This is my paper about Big Data and Deep Learning
-    type: report
-    url: https://github.com/bigdata-i523/hid208/paper1/report.tex
+        - 215
+    status: Oct 29 17 100%
+    title: Big Data and Artificial Neural Networks
+    url: https://github.com/bigdata-i523/hid215/paper1/paper1.pdf
 paper2:
     abstract: >
         Analysis of data is not easy, especially when the data is
@@ -41,23 +40,36 @@ paper2:
         categorization. Hence, there are modified clustering
         algorithms for big data and they are comparable to the already
         existing algorithms for ordinary data.
+=======
+    review: Nov 6 2017
     author:
-        - Jyothi Pranavi Devineni
+        - Mallala, Bharat
     chapter: Technology
     hid:
+<<<<<<< HEAD
         - 208
     status: Nov 5 17 100%
     title: Algorithms for Big Data Analysis
+=======
+        - 215
+    status: Nov 6 17 100%
+    title: Big Data and Artificial Intelligence with Computer Vision
+>>>>>>> 3203311722e82735b371d72927d979953cb5a5c2
     type: report
-    url: https://github.com/bigdata-i523/hid208/paper2/report.tex
+    url: https://github.com/bigdata-i523/hid215/paper2/report.pdf
 project:
     review: Dec 4 2017
     author:
+<<<<<<< HEAD
         - Jyothi Pranavi Devineni
+=======
+        - Gregor von Laszewski
+>>>>>>> 3203311722e82735b371d72927d979953cb5a5c2
     hid:
-        - 208
-    title: Big Data Analytics on Influencers in Social Networks
+        - 000
+    title: null
     abstract: >
+<<<<<<< HEAD
         Social Networking has become a part of people's lives with
         millions of posts made every day. This huge volume of data
         paves the way to find interesting insights from data. Applying
@@ -73,3 +85,12 @@ project:
     type: project
     status: Dec 04 17 90%
     chapter: Big Data with Social Media.
+=======
+        We showcase tis and that and the other
+        and another line.
+    url: https://github.com/bigdata-i523/sample-hid000/project/
+    type: project
+    status: Dec 04 17 0%
+chapter: TBD
+chapter: Big Data with Social Media.
+>>>>>>> 3203311722e82735b371d72927d979953cb5a5c2
