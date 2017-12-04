@@ -5,14 +5,17 @@ owner:
     url: https://github.com/bigdata-i523/hid208
 paper1:
     abstract: >
-        Big Data is providing new opportunities for various industries in different  sectors
-        to enhance their performance by performing analysis on the huge  amounts of
-        data available. However, this is not as easy as it is said. Storing,  transforming
-        and performing analysis on such large amounts of  data requires good storing
-        and computational power. Many solutions have been proposed to     handle big
-        data and use it to the benefit of the company like Map Reduce, Spark and so
-        on.  Deep learning is one of the popular branches of machine learning which
-        plays a key role  when it comes to big data analytics
+        Big Data is providing new opportunities for various industries
+        in different sectors to enhance their performance by
+        performing analysis on the huge amounts of data
+        available. However, this is not as easy as it is
+        said. Storing, transforming and performing analysis on such
+        large amounts of data requires good storing and computational
+        power. Many solutions have been proposed to handle big data
+        and use it to the benefit of the company like Map Reduce,
+        Spark and so on.  Deep learning is one of the popular branches
+        of machine learning which plays a key role when it comes to
+        big data analytics
     author:
         - Jyothi Pranavi,Devineni
     chapter: Machine Learning
@@ -23,27 +26,50 @@ paper1:
     type: report
     url: https://github.com/bigdata-i523/hid208/paper1/report.tex
 paper2:
-    abstract: Analysis of data is not easy, especially when the data is unstructured or has many features. However, there are many algorithms for data pre-processing, feature selection, classification, regression, etc. These algorithms make it simpler to understand and analyze the data. One of the main types of algorithms for analyzing the data is clustering algorithms. They help to categorize the data into clusters. All the related data is collected under one cluster. Clustering facilitates easy analysis of data. However, when it comes to big data, ordinary clustering algorithms might not work because of the absence of formal categorization. Hence, there are modified clustering algorithms for big data and they are comparable to the already existing algorithms for ordinary data.  
+    abstract: >
+        Analysis of data is not easy, especially when the data is
+        unstructured or has many features. However, there are many
+        algorithms for data pre-processing, feature selection,
+        classification, regression, etc. These algorithms make it
+        simpler to understand and analyze the data. One of the main
+        types of algorithms for analyzing the data is clustering
+        algorithms. They help to categorize the data into
+        clusters. All the related data is collected under one
+        cluster. Clustering facilitates easy analysis of
+        data. However, when it comes to big data, ordinary clustering
+        algorithms might not work because of the absence of formal
+        categorization. Hence, there are modified clustering
+        algorithms for big data and they are comparable to the already
+        existing algorithms for ordinary data.
     author:
         - Jyothi Pranavi Devineni
     chapter: Technology
     hid:
         - 208
-    status: Nov 5 17 100% 
-    title:  Algorithms for Big Data Analysis
+    status: Nov 5 17 100%
+    title: Algorithms for Big Data Analysis
     type: report
     url: https://github.com/bigdata-i523/hid208/paper2/report.tex
 project:
     review: Dec 4 2017
-    author: 
+    author:
         - Jyothi Pranavi Devineni
     hid:
         - 208
     title: Big Data Analytics on Influencers in Social Networks
     abstract: >
-        Social Networking has become a part of people's lives with millions
-of posts made every day. This huge volume of data paves the way to find interesting insights from data. Applying Big Data analytic methods on Twitter data helps in identifying the most influenced users.The Twitter data used for analysis is taken from Kaggle website. Performing feature selection tasks on this data has helped in identifying the important features that differentiate a user's influence over the other. By applying various Machine learning classification algorithms iteratively on these features obtained can be used to classify a user as more influential over the other. 
+        Social Networking has become a part of people's lives with
+        millions of posts made every day. This huge volume of data
+        paves the way to find interesting insights from data. Applying
+        Big Data analytic methods on Twitter data helps in identifying
+        the most influenced users.The Twitter data used for analysis
+        is taken from Kaggle website. Performing feature selection
+        tasks on this data has helped in identifying the important
+        features that differentiate a user's influence over the
+        other. By applying various Machine learning classification
+        algorithms iteratively on these features obtained can be used
+        to classify a user as more influential over the other.
     url: https://github.com/bigdata-i523/hid215/tree/master/project
-   type: project
+    type: project
     status: Dec 04 17 90%
-chapter: Big Data with Social Media.
+    chapter: Big Data with Social Media.
