@@ -22,7 +22,7 @@ paper1:
     hid:
         - 208
     status: Oct 27 17 100%
-    title: This is my paper about Big Data and Deep Learning
+    title: Big Data and Deep Learning
     type: report
     url: https://github.com/bigdata-i523/hid208/paper1/report.tex
 paper2:
