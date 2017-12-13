@@ -22,9 +22,12 @@
 Big Data is providing new opportunities for various industries in different sectors to enhance their performance by performing analysis on the huge amounts of data available. However, this is not as easy as it is said. Storing, transforming and performing analysis on such large amounts of data requires good storing and computational power. Many solutions have been proposed to handle big data and use it to the benefit of the company like Map Reduce, Spark and so on. Deep learning is one of the popular branches of machine learning which plays a key role when it comes to big data analytics.
 \end{abstract}
 
-\keywords{Deep Learning, Big Data, Deep Belief Network, Convolutional Neural Network}
+\keywords{i523, hid208, Deep Learning, Big Data, Deep Belief Network, Convolutional Neural Network}
+
 \maketitle
+
 \section{Introduction}
+
 Big data is the latest hot topic in the technical world and so is deep learning. Any data which consumes more than 1 Terra Bytes of memory is considered as big data. Social Media websites like Facebook generate more than 500 Terra Bytes  No conventional data base cannot store or manage more than 1 Terra Bytes of data. Hence, new technologies like Hadoop, Spark and so on have emerged to store and process large amounts of data. Hadoop used HDFS for storing the data and Map Reduce for processing the data. Scripting languages like Pig, Hive and Spark can also be used to process the data but, Map Reduce is a better option for processing unstructured data.
 
 Deep Learning is another hot topic which is being discussed almost everywhere. Deep learning is one of the branches of machine learning, which uses machine learning techniques to solve the problems of data analysis and prediction. It does not follow any pre-defined algorithms, rather learns from the data. The learning can be supervised or unsupervised. Deep learning is used along with the systems with high computational power to address the big data problems. Many companies like Facebook, Apple, Google, Samsung are using the deep learning techniques to manage the huge amounts of data that is being generated daily by their search engines and websites. Not only this, deep learnig is also used in speech recognition, image processing, weather forecasting and so on. Hence, the voice assistants like Siri, Google home, Alexa make use of deep learning as well. As the data keeps getting huge, deep learning comes into play to process the data.
@@ -33,8 +36,28 @@ Deep Learning is another hot topic which is being discussed almost everywhere. D
 Deep learning learns multiple levels of the deep architectures such as Deep Belief Networks(DBN), Convolutional Neural Networks(CNN) and so on. In this paper, a brief overview of DBN and CNN is given.
 
 \subsection{Deep Belief Networks}
-Any conventional neural network can only learn from the labelled data. But, most of the big data available is unlabelled. To take advantage of this massive amounts of unlabelled data, deep belief networks are used. They can not only learn from the labelled data, but also from the unlabelled data. They use both supervised and unsupervised learning techniques. It uses unsupervised techniques for pre- training and then to tune the data, it uses supervised techniques. Figure1 shows the architecture of DBN.
+Any conventional neural network can only learn from the labelled data. But, most of the big data available is unlabelled. To take advantage of this massive amounts of unlabelled data, deep belief networks are used. They can not only learn from the labelled data, but also from the unlabelled data. They use both supervised and unsupervised learning techniques. It uses unsupervised techniques for pre- training and then to tune the data, it uses supervised techniques. Figure 1 shows the architecture of DBN.
 
+\begin{figure}[htp]
+\centering
+\includegraphics[width=\columnwidth]{images/paper1-fig1.png}
+\caption{DBN}
+\label{fig:1}
+%\end{figure}
+
+%\begin{figure}[htp]
+\centering
+\includegraphics[width=\columnwidth]{images/paper1-fig2.png}
+\caption{CNN}
+\label{fig:2}
+%\end{figure}
+
+%\begin{figure}[htp]
+\centering
+\includegraphics[width=\columnwidth]{images/paper1-figure3.png}
+\caption{GPU}
+\label{fig:3}
+\end{figure}
 
 
 To achieve this, DBNs use Restricted Boltzmann Machines(RBMs). RBM consists of input layer, hidden layer and an output layer. Nodes in each layer are connected to all the nodes in the adjacent layer(input to hidden) and nodes in same layer are not connected to each other. Hence, we can say that nodes in same layer are independent of each other. The nodes in hidden layer are connected to the nodes in output layer according to the output to be generated. The network is pre-trained layer by layer using unlabelled data and the generative weights of each RBM are found using Gibbs sampling\cite{Hinton2006}. The output of an RBM is fed as input to the RBM in the next layer. This process is repeated until all the RBMs in a network are pre-trained. The weights represent the input data. Then, the output layer is constructed according to the required outputs. Then, fine tuning is performed using labels and by back propagation. RBMs can be trained on unlabelled and large amounts of data. The sampling probabilities of hidden and visible layers of an RBM with bernoulli distribution are as follows:
@@ -109,25 +132,5 @@ This paper discusses two of the available deep learning architectures and how th
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{report}
 
-\begin{figure}[htp]
-\centering
-\includegraphics[width=80mm]{images/paper1-fig1.png}
-\caption{DBN}
-\label{fig:1}
-\end{figure}
-
-\begin{figure}[htp]
-\centering
-\includegraphics[width=80mm]{images/paper1-fig2.png}
-\caption{CNN}
-\label{fig:2}
-\end{figure}
-
-\begin{figure}[htp]
-\centering
-\includegraphics[width=80mm]{images/paper1-figure3.png}
-\caption{GPU}
-\label{fig:3}
-\end{figure}
 
 \end{document}
