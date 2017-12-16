@@ -23,7 +23,6 @@ paper1:
         - 208
     status: Oct 27 17 100%
     title: Big Data and Deep Learning
-    type: report
     url: https://github.com/bigdata-i523/hid208/paper1/report.tex
 paper2:
     abstract: >
@@ -48,7 +47,6 @@ paper2:
         - 208
     status: Nov 5 17 100%
     title: Algorithms for Big Data Analysis
-    type: report
     url: https://github.com/bigdata-i523/hid208/paper2/report.tex
 project:
     duplicate: True
